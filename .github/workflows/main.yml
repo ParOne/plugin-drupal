@@ -1,13 +1,8 @@
 name: Create Release
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
-    inputs:
-      tag:
-        type: string
-        description: Release Tag
+    tags:
+      - "*"
 jobs:
   build:
     runs-on: ubuntu-latest
