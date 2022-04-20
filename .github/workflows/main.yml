@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        description: Release Tag
 jobs:
   build:
     runs-on: ubuntu-latest
