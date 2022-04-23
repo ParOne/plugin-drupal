@@ -2,7 +2,6 @@ name = ParOne Videos
 description = Provides ParOne shortcodes and access to videos
 package = Shortcode
 core = 7.x
-dependencies[] = shortcode 
 
 ; Information added by Drupal.org packaging script on 2018-11-21
 version = "7.x-2.27"
