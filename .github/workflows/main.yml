@@ -12,11 +12,11 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: "zip"
-          filename: "release.zip"
+          filename: "parone-drupal-plugin-latest.zip"
           path: "parone_shortcode"
           exclusions: "*.git* /*node_modules/* .editorconfig"
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "release.zip"
+          artifacts: "parone-drupal-plugin-latest.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
